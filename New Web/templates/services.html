@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='logo.jpg.JPG')}}" type="image/x-icon">
+  <title>Happy African Hair Braiding</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navar-dark bg-dark">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.jpg.JPG')}}" alt="Site Logo">
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggle-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" id="home" href="/home">Home</a>
+                <a class="nav-item nav-link" id="services" href="/services">Services</a>
+                <a class="nav-item nav-link" id="about" href="/about">About</a>
+                <a class="nav-item nav-link" id="contact" href="/contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <p style="color: rgb(255, 255, 255); font-family: 'Times New Roman', Times, serif; font-size: 65px;">Enter your information for your next appointment</p>
+  <form action="">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname"> Last Name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="lname"> Appointment Day:</label><br>
+    <input type="date" id="AppointmentDay" name="AppointmentDay"><br>
+    <label for="lname"> Appointment Time:</label><br>
+    <input type="time" id="AppointmentTime" name="AppointmentTime"><br>
+    <label for="PhoneNumber"> Phone Number:</label><br>
+    <input type="tel" id="PhoneNumber" name="PhoneNumber"><br>
+    <input style="color: rgb(255, 255, 255); size: 30px; background-color: darkorange;" type="submit" value="SUBMIT">
+  </form>
+   
+</body>
